@@ -16,6 +16,7 @@ export default function ActivityDashboard(props:
         closeForm: () => void;
         createOrEdit: (activity: Activity) => void;
         deleteActivity: (id: string) => void;
+        submitting: boolean;
     }) {
     // in order to use props.property -> need to pass props argument in function(props)
     // here, props is an object with a property activities, that implements an array of Activity interface
@@ -28,6 +29,7 @@ export default function ActivityDashboard(props:
                 activities={props.activities} 
                 selectActivity={props.selectActivity} 
                 deleteActivity={props.deleteActivity}
+                submitting={props.submitting}
                 />
             </Grid.Column>
             <Grid.Column width='6'>
@@ -43,6 +45,7 @@ export default function ActivityDashboard(props:
                         closeForm={props.closeForm}
                         activity={props.selectedActivity}
                         createOrEdit={props.createOrEdit}
+                        submitting={props.submitting}
                     />}
             </Grid.Column>
         </Grid>
