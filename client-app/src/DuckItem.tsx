@@ -1,4 +1,3 @@
-import React from 'react';
 import { IDuck } from './demo';
 
 export default function DuckItem(props: { duck: IDuck}) {
