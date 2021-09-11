@@ -1,11 +1,7 @@
 import React from 'react';
 import { IDuck } from './demo';
 
-interface Props {
-    duck: IDuck;
-}
-
-export default function DuckItem(props: Props) {
+export default function DuckItem(props: { duck: IDuck}) {
     return (
         <div>
             <span> {props.duck.name} </span>
