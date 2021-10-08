@@ -10,3 +10,4 @@ export default function DuckItem(props: { duck: IDuck}) {
         </div>
     )
 }
+console.log('')
